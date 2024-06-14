@@ -1,0 +1,346 @@
+:root {
+    --merriweather: "Merriweather", sans-serif;
+    --caveat: "Caveat", sans-serif;
+
+    --light-blue: rgba(119, 136, 153, 1);
+    --dark-blue: rgba(100, 149, 237, .1);
+
+    --tr: .2s;
+}
+
+body {
+    font-family: var(--merriweather);
+    background-color: var(--dark-blue);
+    font-size: 20px;
+}
+.container {
+    width: 100%;
+    max-width: 1182px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Header */
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 340px;
+}
+.name_and_date p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.name_and_date {
+    font-family: var(--caveat);
+    font-size: 55px;
+    font-weight: 700;
+    color: var(--light-blue);
+    margin-top: 20px;
+}
+.invitation {
+    margin-top: 30px;
+}
+
+/* Main */
+
+h2 {
+    font-family: var(--caveat);
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--light-blue);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.location-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.hall {
+    object-fit: cover;
+    max-width: 720px;
+    height: 330px;
+    border-radius: 10%;
+    border: 3px solid var(--light-blue);
+}
+.location-info p {
+    line-height: 210%;
+}
+.location-info a {
+    display: block;
+    max-width: 200px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--light-blue);
+    padding: 15px 0;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    transition: var(--tr);
+}
+.location-info a:hover {
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+}
+
+.timing {
+    max-width: 420px;
+    margin: 10px auto;
+    padding: 0;
+}
+.timing li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.time-1::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/place.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.time-2::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/couple.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.time-3::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/wine.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.time-4::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/cake.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dress_code-info {
+    max-width: 900px;
+    margin: 10px auto;
+    line-height: 210%;
+}
+.dress_code-color {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.color1, .color2, .color3, .color4 {
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(167, 167, 167, 0.3);
+    border-radius: 25px;
+}
+.color1 {
+    background-color: #F3EAD8;
+}
+.color2 {
+    background-color: #DAEAF7;
+}
+.color3 {
+    background-color: #CFD1E0;
+}
+.color4 {
+    background-color: #ACB9AF;
+}
+
+.details p {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 210%;
+}
+.details p::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/heart.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.form-info {
+    position: relative;
+	overflow: hidden;
+	max-width: 100%;
+}
+.form-info p {
+    line-height: 210%;
+    margin: 0;
+}
+
+.contacts {
+    margin-bottom: 20px;
+}
+.contacts p {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    line-height: 210%;
+}
+.contacts-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contacts-number::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.contacts-phone {
+    text-decoration: none;
+    color: black;
+}
+.contacts-phone:hover {
+    border-bottom: 1.5px solid var(--light-blue);
+    color: var(--light-blue);
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    .header {
+        padding: 270px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    .timing {
+        max-width: 330px;
+    }
+    .time-1::before, .time-2::before, .time-3::before, .time-4::before {
+        width: 50px;
+        height: 50px;
+    }
+    .color1, .color2, .color3, .color4 {
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+    }
+    .details p {
+        max-width: 620px;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        font-size: 14px;
+    }
+    .header {
+        padding: 210px;
+    }
+    .name_and_date {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 47px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .hall {
+        height: 285px;
+    }
+    .location-info a {
+        padding: 13px 0;
+        font-size: 13px;
+    }
+    .time-1::before, .time-2::before, .time-3::before, .time-4::before {
+        width: 47px;
+        height: 47px;
+    }
+    .color1, .color2, .color3, .color4 {
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+    }
+    .contacts-number::before {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 13px;
+    }
+    .header {
+        padding: 145px;
+    }
+    .name_and_date {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 40px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .hall {
+        height: 240px;
+    }
+    .timing {
+        max-width: 280px;
+    }
+    .timing li {
+        gap: 20px;
+    }
+    .time-1::before, .time-2::before, .time-3::before, .time-4::before {
+        width: 40px;
+        height: 40px;
+    }
+    .dress_code-info {
+        max-width: 315px;
+    }
+    .color1, .color2, .color3, .color4 {
+        width: 45px;
+        height: 45px;
+    }
+    .form-info p {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}
