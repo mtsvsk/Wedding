@@ -351,3 +351,16 @@ h2 {
         font-size: 12px;
     }
 }
+@media (max-width: 350px) {
+    .name_and_date {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 35px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .hall {
+        height: 220px;
+    }
+}
