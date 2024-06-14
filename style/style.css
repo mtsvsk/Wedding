@@ -72,6 +72,7 @@ h2 {
 }
 .location-info p {
     line-height: 210%;
+    margin: 0;
 }
 .location-info a {
     display: block;
@@ -80,7 +81,7 @@ h2 {
     text-decoration: none;
     background-color: var(--light-blue);
     padding: 15px 0;
-    margin: 0 auto;
+    margin: 12px auto;
     font-size: 15px;
     text-align: center;
     color: #FFFFFF;
