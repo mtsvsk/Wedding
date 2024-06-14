@@ -238,7 +238,6 @@ h2 {
 .contacts-phone:hover {
     border-bottom: 1.5px solid var(--light-blue);
     color: var(--light-blue);
-    font-weight: 600;
 }
 
 
