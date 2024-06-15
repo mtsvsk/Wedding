@@ -364,3 +364,20 @@ h2 {
         height: 220px;
     }
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-blue);
+    }
+    .color1 {
+        background-color: #F3EAD8;
+    }
+    .color2 {
+        background-color: #DAEAF7;
+    }
+    .color3 {
+        background-color: #CFD1E0;
+    }
+    .color4 {
+        background-color: #ACB9AF;
+    }
+}
