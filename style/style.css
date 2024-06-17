@@ -199,11 +199,13 @@ h2 {
 .form-info {
     position: relative;
 	overflow: hidden;
-	max-width: 100%;
 }
 .form-info p {
     line-height: 210%;
     margin: 0;
+}
+.form-iframe > iframe{
+    width: 500px;
 }
 
 .contacts {
@@ -305,6 +307,9 @@ h2 {
         width: 20px;
         height: 20px;
     }
+    .form-iframe > iframe{
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -346,6 +351,9 @@ h2 {
         margin: 0 auto;
         max-width: 300px;
     }
+    .form-iframe > iframe{
+        width: 100%;
+    }
     .contacts-number {
         gap: 7px;
         font-size: 12px;
@@ -362,5 +370,8 @@ h2 {
     }
     .hall {
         height: 220px;
+    }
+    .form-iframe > iframe{
+        width: 100%;
     }
 }
